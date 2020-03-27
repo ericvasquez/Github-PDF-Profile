@@ -178,50 +178,50 @@ function generateHTML(data) {
           <img src="${data.avatar_url}" alt="Profile Picture" />
           <h1>Hi!</h1>
           <h2>My name is ${data.name}</h2>
-              <nav class="links-nav">
+            <nav class="links-nav">
                 <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/${data.location}"><i class="fas fa-location-arrow"></i> ${data.location}</a>
                 <a class="nav-link" target="_blank" rel="noopener noreferrer" href="${data.html_url}"><i class="fab fa-github-alt"></i> GitHub</a>
-              </nav>
-        </div>
-          <main>
-            <div class="container">
-              <div class="row">
-                  <div class="col">
-                    <h3>${data.bio}</h3>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col">
-                    <div class="card">
-                      <h3>Public Repositories</h3>
-                      <h4>${data.public_repos}</h4>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <h3>Followers</h3>
-                      <h4>${data.followers}</h4>
-                    </div>
+            </nav>
+      </div>
+        <main>
+          <div class="container">
+            <div class="row">
+                <div class="col">
+                  <h3>${data.bio}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <h3>Public Repositories</h3>
+                    <h4>${data.public_repos}</h4>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="card">
-                      <h3>GitHub Stars</h3>
-                      <h4>${data.stars}</h4>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <h3>Following</h3>
-                      <h4>${data.following}</h4>
-                    </div>
+                <div class="col">
+                  <div class="card">
+                    <h3>Followers</h3>
+                    <h4>${data.followers}</h4>
                   </div>
                 </div>
               </div>
-            </main>
-        </div>
-      </body>
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <h3>GitHub Stars</h3>
+                    <h4>${data.stars}</h4>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <h3>Following</h3>
+                    <h4>${data.following}</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+      </div>
+    </body>
   </html>`
  }
  module.exports = generateHTML;
